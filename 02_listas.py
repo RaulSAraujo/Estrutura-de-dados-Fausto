@@ -12,7 +12,7 @@ valores = [2, 3, 5, 7, 9, 11, 'batata', 'tomate', True]
 for v in valores:
     print(v)
 
-print('\n', '*' * 80, sep='') # Imprime * 80 vezes
+print('\n', '*' * 80, sep='')  # Imprime * 80 vezes
 
 
 # 2) INSERÇÃO DE UM NOVO ELEMENTO NO *FIM* DA LISTA: append()
@@ -21,17 +21,17 @@ print(valores)
 valores.append(29)
 print(valores)
 
-print('\n', '-' * 80, sep='') # Imprime - 80 vezes
+print('\n', '-' * 80, sep='')  # Imprime - 80 vezes
 
 
 # 3) INSERINDO UM NOVO ELEMENTO EM UMA POSIÇÃO ESPECIFICADA: insert()
 #    Parâmetros:
 #    1º: índice para inserir
 #    2º: valor a ser inserido
-valores.insert(4, 'chuchu') # Inserindo 'chuchu' no índice 4
+valores.insert(4, 'chuchu')  # Inserindo 'chuchu' no índice 4
 print(valores)
 
-valores.insert(0, 'abobrinha') # Inserindo 'abobrinha' na primeira posição
+valores.insert(0, 'abobrinha')  # Inserindo 'abobrinha' na primeira posição
 print(valores)
 
 print('\n', '-' * 80, sep='')
@@ -62,18 +62,18 @@ print("Numero de elementos na lista: ", len(valores))
 # Imprimindo o ultimo elemento da lista com a ajuda de len()
 print("Ultimo valor da lista:", valores[len(valores) - 1])
 
-print("\n",'-' * 80, sep='')
+print("\n", '-' * 80, sep='')
 
 # 7) REMOVENDO O ULTIMO ELEMENTO DA LISTA: pop()
 print("Antes:", valores)
 ultimo = valores.pop()
-print("Valor removido da lista:",ultimo)
-print("Depois:",valores)
+print("Valor removido da lista:", ultimo)
+print("Depois:", valores)
 
 print('\n', '-' * 80, sep='')
 
 # 8) REMOVENDO UM ELEMENTO POR SUA POSIÇÃO: pop() com parametro
-print("Antes",valores)
+print("Antes", valores)
 pos9 = valores.pop(9)
 print("Valor removido da posição 9:", pos9)
 pos0 = valores.pop(0)
@@ -82,12 +82,12 @@ print("Depois:", valores)
 print('\n', '-' * 80, sep='')
 
 # 9) REMOVENDO UM ELEMENTO PELO SEU VALOR: remove()
-print("Antes:",valores)
+print("Antes:", valores)
 valores.remove("batata")
 valores.remove(5)
-print("Depois>",valores)
+print("Depois>", valores)
 
-print('\n', '-' * 80,sep='')
+print('\n', '-' * 80, sep='')
 
 # Acrescentando mais alguns elementos na lista
 valores.append(13)
@@ -109,7 +109,7 @@ print("Sublista de 1 a 7:", sublista_7)
 # Cria uma sublista que contem os elementos do inicio até a posição 5 (posição 6 NÃO ENTRA)
 sublista0_5 = valores[:6]
 
-#Cria uma sublista que contem os elementos da posição 10 até o fim da lista
+# Cria uma sublista que contem os elementos da posição 10 até o fim da lista
 sublista10_fim = valores[10:]
 print('Sublista de 10 até o final:', sublista10_fim)
 
@@ -124,21 +124,3 @@ for x in range(10):
     print(x)
 
 print("-" * 80)
-
-# range() com 2 parâmetros: gera uma lista começando pelo
-# primeiro paramentro (inclusive) até o segundo argumento
-# (exclusive, NÃO ENTRA)
-
-for y in range(5,12):
-    print(y)
-
-# Range com 3 parâmentros:
-# 1: limite inferior (inclusive)
-# 2: limite superior (EXCLUSIVE)
-# 3: passo (de quanto em quanto a lista vai saltar: PODE SER NEGATIVO)
-for z in range(0,22,3): # De 0 a 21 saltando de 3 em 3 
-    print(z)
-
-# Range() com passo negativo
-for k in range(10,0,-1): #Contagem regressiva de 10 até 1
-    print(k)
